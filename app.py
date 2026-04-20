@@ -4,7 +4,7 @@ import joblib
 
 # Load the trained model
 try:
-    model = joblib.load('random_forest_regressor_model.pkl.zip')
+    model = joblib.load('random_forest_regressor_model.pkl')
 except FileNotFoundError:
     st.error("Model file 'random_forest_regressor_model.pkl' not found. Make sure it's in the same directory as this app.py file.")
     st.stop()
